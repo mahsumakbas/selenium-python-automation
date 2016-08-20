@@ -1,0 +1,45 @@
+# Selector types for Python
+# CLASS_NAME
+# CSS_SELECTOR
+# ID
+# LINK_TEXT
+# NAME
+# PARTIAL_LINK_TEXT
+# TAG_NAME
+# XPATH
+
+[General]
+v_body						= ["TAG_NAME","body"]
+
+[HomeAddress]
+mahsumakbas_net				= http://www.mahsumakbas.net/
+mahsumakbas_com				= http://www.mahsumakbas.com/
+
+
+[Pages]
+home_page					= index.php
+about_me					= about-me
+selenium_page				= selenium
+
+[HomePage]
+v_articles					= ["CSS_SELECTOR","div#content > article"]
+v_first_article				= ["CSS_SELECTOR","div#content > article:nth-of-type(1) > header > h2 > a"]
+
+[AboutMePage]
+v_page_title				= ["CSS_SELECTOR","div#content > article:nth-of-type(1) > header > h1"]
+
+[SeleniumPage]
+v_first_name				= ["CSS_SELECTOR","input#firstname"]
+v_last_name					= ["CSS_SELECTOR","input#lastname"]
+v_value_list				= ["NAME","selectByValue"]
+v_index_list				= ["CSS_SELECTOR","select#selectByIndex"]
+v_text_list					= ["ID","selectByText"]
+v_check_box					= ["CSS_SELECTOR","input#submitCheck"]
+v_pure_ajax_btn				= ["CSS_SELECTOR","input#submitAjax"]
+v_jquery_ajax_btn			= ["ID","submitAjax"]
+v_ajax_progress				= ["ID","loading"]
+v_result_div				= ["ID","result"]
+v_ajax_result_text			= ["ID","ajaxReturnDiv"]
+
+
+
