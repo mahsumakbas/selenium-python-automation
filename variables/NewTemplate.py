@@ -15,14 +15,14 @@ class TestClass(unittest.TestCase):
     def setUp(self):
         s.setup_function()
           
-    def netm_ListUsers(self):
+    def mahsumnet_ListUsers(self):
         test_case_name = g.get_test_case_name(self)       
-        v_username  = g.v("Login", "v_username")
+        v_first_name  = g.v("SeleniumPage", "v_first_name")
               
         g.start_test_message(date_as_string, test_case_name)
          
-        s.go_to_page("netmetriks","anaSayfa")
-        s.type_element(v_username, "user1")
+        s.go_to_page("SeleniumPage","about_me")
+        s.type_element(v_first_name, "user1")
 
          
         g.finish_test_message(date_as_string, test_case_name)  
